@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ExpertAppTradeWorld",
-    "slug": "ExpertAppTradeWorld",
+    "name": "Expert App",
+    "slug": "expert-app-mbc",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,21 +13,15 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.orion.expertApp",
+      "bundleIdentifier": "com.mbc.expert",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "com.orion.mbctrader",
-      "versionCode": 1,
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
+      "package": "com.mbc.expert",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"

@@ -9,7 +9,7 @@ if (!firebase.apps.length) {
 export const writeUserData = (data) => {
   console.log("DATA", data);
   const strike = data.strike ? data.strike : null;
-  const expiryDate = data.expiryDate ? data.expiryDate : null;
+  const expiryDate = data.expiryDate ? data.expiryDate.toString() : null;
   firebase.database().ref(data.stockName).set({
     stockName: data.stockName,
     tradeType: data.tradeType,
@@ -19,7 +19,7 @@ export const writeUserData = (data) => {
     stopLoss: data.stopLoss,
     limit: data.limit,
     strike: strike,
-    expiryDate: expiryDate.toString(),
+    expiryDate: expiryDate,
     date: data.date,
     status: true,
     result: "---",
